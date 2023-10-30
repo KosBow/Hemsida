@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forum.css">
+    <title>Document</title>
+</head>
+<body>
+<header>
+        <div class="container">
+            <nav>
+                <h1 class="logo">Khosrat</h1>      
+                <ul class="nav-links">
+                    <li class="link"><a href="index.html">Startsida</a></li>
+                    <li class="link"><a href="KontaktSida.html">Kontaktsida</a></li>
+                    <button type="button">Ladda CV</button> 
+                </ul>
+            </nav>
+        </div>
+    <div class="section-container">
+        <form action="">
+            <label for="namn">Fullständiga Namn</label>
+            <input type="text" id="namm" namn="fullständiga-namn"  placeholder="Fullständiga namn">
+            <label for="email">Email</label>
+            <input type="text" id="email" namn="email"  placeholder="Email">
+            <label for="ärenden">Välj Ärendetyp</label>
+            <select name="ärenden" id="ärenden" placeholder="ärendetyp">
+            <option value="support">Support</option>
+            <option value="synpunkter">Synpunkter</option>
+            <option value="fråga-om-projekt">Frågor om mitt projekt</option>
+        </select>
+        <label for="meddelanderuta">Meddelande</label>
+        <textarea name="meddelanderuta" id="meddelanderuta" placeholder="Skriv ditt Meddelande..."></textarea>
+        <input type="checkbox" name="checkbox" value="integritetpolicy">
+        <label for="checkbox">Godkänna integritetpolicy</label><br>
+        <input type="submit" value="Skicka in" onclick="myFunction()">
+        <script>
+            function myFunction() {
+              alert("Meddelande inskickat!");
+            }
+            </script>
+        </form>
+    </div>
+</header>
+<!--FOOTER-->
+    <div class="footer-container">
+        <footer>
+            <div class='container'>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <ul>
+                        <li><a href='#'>Terms</a></li>
+                        <li><a href='#'>Privacy</a></li>
+                        <li><a href='#'>Contact</a></li>
+                        <li><a href='#'></a></li>
+                        <p>&copy; Copyright 2023</p>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+<!--FOOTER-->
+</body>
+</html>

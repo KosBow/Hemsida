@@ -1,0 +1,77 @@
+.containter-Box{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20%;
+    background: #191919;
+ }
+ .containter-Box .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #191919;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.containter-Box .box .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    transition: 0.5s;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+}
+
+.containter-Box .box .icon .fa-solid {
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+    border-radius: 50%; 
+}
+
+.containter-Box .box:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+}
+
+.containter-Box .box:hover .icon .fa-solid {
+    font-size: 40px;
+}
+.containter-Box .box .content{
+    position: absolute;
+    top: 100px;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.containter-Box .box:hover .content{
+    top: 100px;
+    opacity: 1;
+}
+.containter-Box .box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    color: aqua;
+    font-size: 24px;
+}
+.containter-Box .box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}

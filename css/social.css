@@ -1,0 +1,20 @@
+.social-container{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.social-ikoner a {
+    margin: 0 2%;
+    display: inline-block;
+}
+
+.social-ikoner img {
+    width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.social-ikoner a:hover img{
+    border: 2px solid aqua;
+}
